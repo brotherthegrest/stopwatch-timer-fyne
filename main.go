@@ -8,8 +8,9 @@ import (
 )
 
 func main() {
-	a := app.New("stopwatch")
+	a := app.New()
 	fmt.Println("kocham rodzine!")
 	w := a.NewWindow("Stop Watch")
-	w.SetContent(widget.NewLabel("welcome to this horrible app"))
+	w.SetContent(widget.NewLabel("welcome to this stopwatch"))
+	w.ShowAndRun()
 }
